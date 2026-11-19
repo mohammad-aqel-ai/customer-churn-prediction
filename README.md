@@ -31,7 +31,7 @@ The dataset is not included in this repo. Download it from the link above.
 
 ## Key findings
 - **Class weights alone didn't fix it.** They raised Logistic Regression's recall to 0.86, but precision fell to 0.50 and PR-AUC didn't change. Weights and thresholds only move along the same trade-off; a **better model** moves the whole curve.
-- **Tree models captured non-linear patterns** that Logistic Regression couldn't (PR-AUC 0.75 → 0.95).
+- **Tree models captured non-linear patterns** that Logistic Regression couldn't (cross-validation PR-AUC 0.75 → 0.95).
 - **Strongest churn signals:** complaints (81% churn vs 10% without a complaint), low usage (32% churn in the lowest-usage quarter vs about 1% in the highest), and call failures.
 
 ![Precision-recall curves](figures/pr_curves.png)
